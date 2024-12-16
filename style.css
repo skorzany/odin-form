@@ -60,3 +60,62 @@ isolation: isolate;
 /* END OF CSS RESET */
 
 
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+
+/* LEFT-SIDE PART */
+
+.side {
+    display: flex;
+    flex-direction: column;
+
+    width: 35%;
+    background-image: url("./img/medium.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.side-logo {
+    font-family: norsebold;
+    font-size: 3rem;
+    font-weight: normal;
+    background-color: rgb(0 0 0 / 50%);
+    margin-top: 25vh;
+    text-align: center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 7.75rem;
+    margin: 0.75rem 0;
+}
+
+.side-footer {
+    margin: auto auto 1rem;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.side-footer a {
+    color: white;
+}
+
+/* END OF LEFT-SIDE PART */
+
+
+/* RIGHT-SIDE PART */
+
+.main {
+    background-color: yellow;
+    width: 65vw;
+}
+
+/* END OF RIGHT-SIDE PART */
