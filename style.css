@@ -74,7 +74,7 @@ body {
     flex-direction: column;
 
     width: 35%;
-    background-image: url("./img/medium.jpg");
+    background: url("./img/medium.jpg") darkgreen;
     background-position: center;
     background-size: cover;
 }
