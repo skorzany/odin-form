@@ -44,16 +44,31 @@
             <section>
                 <p>
                     <label for="password-1">PASSWORD</label>
-                    <input type="password" id="password-1" name="password-1" required>
+                    <input type="password" id="password-1" name="password-1" minlength="7" required>
                 </p>
                 <p>
                     <label for="password-2">CONFIRM PASSWORD</label>
-                    <input type="password" id="password-2" name="password-2" required>
+                    <input type="password" id="password-2" name="password-2" minlength="7" required>
                 </p>
+                <span class="visible"></span>
             </section>
         </form>
         <button type="submit" form="myform">Create Account</button>
         <p>Already have an account? <a href="#">Log in</a></p>
     </div>
+
+    <script>
+        function validate() {
+            const [pass1, pass2] = document.querySelectorAll('input[type="password"]');
+            const output = document.querySelector("span").classList;
+            const pass1Empty = (pass1.value === "");
+            const pass2Empty = (pass2.value === "");
+
+            (!pass1Empty && !pass2Empty) && (pass1.value === pass2.value) ? output.remove("visible") : output.add("visible");
+        }
+
+        const passwords = document.querySelector("section:last-of-type");
+        passwords.addEventListener("input", validate);
+    </script>
 </body>
 </html>

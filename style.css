@@ -118,6 +118,7 @@ body {
 .main {
     background-color: #f9fbfd;
     width: 62.5vw;
+    position: relative;
 }
 
 .main>p:nth-child(-n+2) {
@@ -206,6 +207,16 @@ input:focus {
 
 input[type="password"]:invalid {
     border-color: red;
+}
+
+.visible::after {
+    color: red;
+    font-size: calc((2/3)*1rem);
+    padding-top: 1px;
+    content: "* Passwords do not match";
+    position: absolute;
+    top: 39rem;
+    left: 3rem;
 }
 
 /* END OF FORM STYLING */
