@@ -75,7 +75,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    width: 35%;
+    width: 37.5vw;
     background: url("./img/medium.jpg") #596D48;
     background-position: center;
     background-size: cover;
@@ -117,7 +117,7 @@ body {
 
 .main {
     background-color: #f9fbfd;
-    width: 65vw;
+    width: 62.5vw;
 }
 
 .main>p:nth-child(-n+2) {
@@ -130,7 +130,8 @@ body {
 }
 
 .main>p:first-child {
-    margin: 10.5rem 30rem 1.5rem 3rem;
+    margin: 10.5rem 0rem 1.5rem 3rem;
+    text-wrap: balance;
 }
 
 form {
@@ -187,3 +188,24 @@ button {
 }
 
 /* END OF RIGHT-SIDE PART */
+
+
+/* FORM STYLING */
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 0.25rem 0 0.25rem 0.5rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.5);
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+}
+
+/* END OF FORM STYLING */
